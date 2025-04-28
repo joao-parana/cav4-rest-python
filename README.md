@@ -8,8 +8,16 @@
 ## TLDR;
 
 ```bash
-# TBD !
+python3 -m pip install -e .
+# Disable check https (DO NOT SET THIS IN PRODUCTION)
+export AUTHLIB_INSECURE_TRANSPORT=1
+echo $AUTHLIB_INSECURE_TRANSPORT
+flask run
 ```
+
+Then you can open http://127.0.0.1:5000 in browser
+
+---
 
 ## How to create an OAuth 2.0 Provider
 
@@ -30,7 +38,7 @@ Set Flask and Authlib environment variables:
 ```bash
 echo $AUTHLIB_INSECURE_TRANSPORT
 # Disable check https (DO NOT SET THIS IN PRODUCTION)
-$ export AUTHLIB_INSECURE_TRANSPORT=1
+export AUTHLIB_INSECURE_TRANSPORT=1
 ```
 
 Create Database and run the development server:
