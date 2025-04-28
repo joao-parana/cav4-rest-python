@@ -1,15 +1,15 @@
 import os
 from flask import Flask
-from .models import db
-from .oauth2 import config_oauth
-from .routes import bp
+from cav4_rest_python.website.models import db
+from cav4_rest_python.website.oauth2 import config_oauth
+from cav4_rest_python.website.routes import bp
 
 
 def create_app(config=None):
     app = Flask(__name__)
 
     # load default configuration
-    app.config.from_object('website.settings')
+    app.config.from_object('cav4_rest_python.website.settings')
 
     # load environment configuration
     if 'WEBSITE_CONF' in os.environ:

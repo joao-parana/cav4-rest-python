@@ -28,6 +28,7 @@ See [Installation](#installation) section
 Set Flask and Authlib environment variables:
 
 ```bash
+echo $AUTHLIB_INSECURE_TRANSPORT
 # Disable check https (DO NOT SET THIS IN PRODUCTION)
 $ export AUTHLIB_INSECURE_TRANSPORT=1
 ```

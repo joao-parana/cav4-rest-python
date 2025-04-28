@@ -4,8 +4,8 @@ from flask import render_template, redirect, jsonify
 from werkzeug.security import gen_salt
 from authlib.integrations.flask_oauth2 import current_token
 from authlib.oauth2 import OAuth2Error
-from .models import db, User, OAuth2Client
-from .oauth2 import authorization, require_oauth
+from cav4_rest_python.website.models import db, User, OAuth2Client
+from cav4_rest_python.website.oauth2 import authorization, require_oauth
 
 
 bp = Blueprint('home', __name__)

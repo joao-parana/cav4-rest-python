@@ -1,5 +1,8 @@
 .env
 
+# database
+src/instance/
+
 .venv
 certs/ca-root.pem
 
@@ -16,6 +19,7 @@ node_modules/
 
 # Compiled Python bytecode
 *.py[cod]
+__pycache__/
 
 # Log files
 *.log
